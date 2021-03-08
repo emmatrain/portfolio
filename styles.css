@@ -3,7 +3,7 @@
 }
 
 body {
-   margin: 0;
+   margin: 50px 150px 10px 150px;
 }
 
 nav {
@@ -22,8 +22,6 @@ nav {
 .logo {
 	height: 70px;
 	width: 70px;
-	padding: 20px;
-	margin: 20px;
 }
 
 .nav-right {
@@ -33,7 +31,6 @@ nav {
 
 .nav-right li {
 	padding: 20px;
-	margin: 20px;
 }
 
 .nav-right a:link, a:visited {
@@ -43,4 +40,8 @@ nav {
 .nav-right a:hover, a:active {
 	text-decoration: underline;
 	background-color: pink;
+}
+
+header {
+	margin-top: 120px;
 }
