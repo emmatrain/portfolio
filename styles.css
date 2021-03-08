@@ -19,20 +19,28 @@ nav {
 	list-style-type: none;
 }
 
+.logo {
+	height: 70px;
+	width: 70px;
+	padding: 20px;
+	margin: 20px;
+}
+
 .nav-right {
 	display: flex;
 	list-style-type: none;
 }
 
 .nav-right li {
-	padding: 10px;
-	margin: 10px;
+	padding: 20px;
+	margin: 20px;
 }
 
-.logo {
-	height: 60px;
-	width: 60px;
-	padding: 10px;
-	margin: 10px;
+.nav-right a:link, a:visited {
+	text-decoration: none;
 }
 
+.nav-right a:hover, a:active {
+	text-decoration: underline;
+	background-color: pink;
+}
