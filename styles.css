@@ -10,8 +10,14 @@ body {
 	margin: 0;
 }
 
-.diagonal-box {
-	background-image: linear-gradient(45deg, #ed4264, #ffedbc); /*dark pink into yellow*/
+.diagonal-box-one {
+	background-image: linear-gradient(45deg, #ed4264, #ffedbc); /*dark pink into yellow
+	/*background-image: linear-gradient( 105.3deg,  rgba(30,39,107,1) 21.8%, rgba(77,118,221,1) 100.2% );*/
+	/*background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);*/
+	/*background-image: linear-gradient(45deg, #ff758c, #ff7eb3);*/
+/*	background-image: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);*/
+/*	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,229,168,1) 0%, rgba(251,174,222,1) 100.7% );*/
+/*	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,101,133,1) 0%, rgba(255,211,165,1) 90% );*/
 	transform: skewY(-11deg);
 	padding: 100px;
 }
@@ -82,11 +88,11 @@ header h2, h3 {
 	color: #FFFFFF;
 }
 
-h2 {
+header h2 {
 	font-size: 2rem;
 }
 
-h3 {
+header h3 {
 	font-size: 1.8rem;
 }
 
@@ -99,16 +105,29 @@ header a:hover {
 	text-decoration: underline;
 }
 
+header img {
+	height: 32px;
+	width: 32px;
+	margin: 10px;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: flex-start;
+	width: 250px;
+	padding: 20px;
+}
+
 /* ABOUT SECTION STYLING */
 
 #about {
-	margin: 20px 150px 100px;
+	margin: 100px 150px 200px;
 	display: flex;
 	justify-content: flex-end;
 }
 
 .bio-content h2 {
-	font-family: 'Londrina Solid', serif;
+	font-family: 'Montserrat', serif;
 	color: #ed4264; /*dark pink*/
 	font-size: 4rem;
 }
@@ -117,4 +136,47 @@ header a:hover {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.5rem;
 	width: 700px;
+}
+
+/* PROJECT SECTION STYLING */
+
+
+#projects {
+	width: 100%;
+}
+
+#projects h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: #ed4264; /*dark pink*/
+	font-weight: 500;
+	font-size: 3rem;
+}
+
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	color: #000000;
+	font-weight: 500;
+	font-size: 2rem;
+}
+
+#projects h1 span {
+	font-family: 'Londrina Outline';
+}
+
+
+.projects-container {
+	margin: 50px 150px 100px;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+.projects-container div {
+	width: 25%;
+}
+
+.projects-container img {
+	height: 100px;
+	width: 200px;
 }
