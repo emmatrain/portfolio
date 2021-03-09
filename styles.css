@@ -2,8 +2,12 @@
    box-sizing: border-box;
 }
 
+html {
+	font-size: 62.5%; /*16px (so 1 rem = 10px)*/
+}
+
 body {
-	margin:0;
+	margin: 0;
 }
 
 .diagonal-box {
@@ -12,11 +16,17 @@ body {
 	padding: 100px;
 }
 
-
 .content {
 	max-width: 100em;
 	margin: 0 auto;
 	transform: skewY(11deg);
+}
+
+.home-arrow {
+	height: 55px;
+	position: fixed;
+	right: 50px;
+	top: 85%;
 }
 
 /* NAV STYLING */
@@ -32,7 +42,7 @@ nav li {
 	padding: 20px;
 	font-family: 'Montserrat', sans-serif;
 	list-style-type: none;
-	font-size: 1.1rem;
+	font-size: 1.8rem;
 }
 
 nav a:link, a:visited a:hover a:active {
@@ -43,8 +53,37 @@ nav a:link, a:visited a:hover a:active {
 /* HEADER STYLING */
 
 header {
-	margin: 140px 150px 100px 150px;
+	margin: 140px 150px 100px 100px;
 	background-color: transparent;
+	color: #FFFFFF;
+	width: 900px;
+}
+
+header h1 {
+	font-family: 'Londrina Solid', serif;
+	font-weight: 500;
+	font-size: 6rem;
+}
+
+header h1 span {
+	font-family: 'Londrina Outline';
+}
+
+header h1 span:hover {
+	font-family: 'Londrina Solid', serif;
+}
+
+header h2, h3 {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
+header h2 {
+	font-size: 2rem;
+}
+
+header h3 {
+	font-size: 1.8rem;
 }
 
 header a:link, a:visited, a:active {
@@ -56,37 +95,6 @@ header a:hover {
 	text-decoration: underline;
 }
 
-header h1 {
-	font-family: 'Londrina Solid', serif;
-	font-weight: 500;
-	color: #FFFFFF;
-	font-size: 4rem;
-}
-
-header h1 span {
-	font-family: Londrina Outline;
-	font-size: 4rem;
-}
-
-header h1 span:hover {
-	font-family: 'Londrina Solid', serif;
-	color: white;
-	font-size: 4rem;
-}
-
-h2, h3 {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: thin;
-	color: white;
-	font-size: ;
-}
-
-header img {
-	width: 115px;
-	height: 100px;
-	padding: 0 15px 0 0;
-}
-
 /* ABOUT SECTION STYLING */
 
 #about {
@@ -95,26 +103,14 @@ header img {
 	justify-content: flex-end;
 }
 
-.home-arrow {
-	height: 55px;
-	float: right;
-	position: fixed;
-	right: 50px;
-	top: 85%;
-}
-
 .bio-content h2 {
 	font-family: 'Londrina Solid', serif;
-	font-size: 3rem;
 	color: #ed4264;
+	font-size: 4rem;
 }
 
 .bio-content p {
 	font-family: 'Montserrat', sans-serif;
-	color: #000000;
+	font-size: 1.5rem;
 	width: 700px;
-
 }
-
-
-
