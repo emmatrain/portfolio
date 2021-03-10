@@ -12,6 +12,13 @@ body {
 
 a {
 	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+}
+
+li {
+	padding: 20px;
+	list-style-type: none;
+	font-size: 1.8rem;
 }
 
 .diagonal-box-one {
@@ -42,20 +49,14 @@ nav {
 	justify-content: flex-end;
 }
 
-nav li {
-	padding: 20px;
-	list-style-type: none;
-	font-size: 1.8rem;
-}
-
 nav a {
 	text-decoration: none;
 }
 
-nav a:link    {color:#ed4264;} /*dark pink*/
-nav a:visited {color:#ed4264;} /*dark pink*/
-nav a:hover   {color:#FFFFFF;}
-nav a:active  {color:#ed4264;} /*dark pink*/
+nav a, footer a:link    {color:#ed4264;} /*dark pink*/
+nav a, footer a:visited {color:#ed4264;} /*dark pink*/
+nav a, footer a:hover   {color:#FFFFFF;}
+nav a, footer a:active  {color:#ed4264;} /*dark pink*/
 
 /* HEADER STYLING */
 
@@ -138,6 +139,7 @@ header img {
 	font-size: 1.5rem;
 }
 
+
 /* ABOUT SECTION STYLING */
 
 #about {
@@ -149,14 +151,13 @@ header img {
 .headshot {
 	border-radius: 50%;
 	height: 350px;
-	width: 350px;
+	width: 330px;
 }
 
 .bio-content p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.5rem;
 	width: 700px;
-	color: #000000;
 }
 
 /*PROJECTS STYLING*/
@@ -176,12 +177,11 @@ header img {
 .projects-container {
 	margin: 50px 150px 100px;
 	display: flex;
-	justify-content: center;
-	flex-flow: row wrap;
 }
 
 .projects-container article {
 	width: 25%;
+	flex-flow: row wrap;
 }
 
 .projects-container img {
@@ -190,7 +190,6 @@ header img {
 }
 
 .projects-container a {
-
 	color: #ed4264; /*dark pink*/
 	font-size: 1.5rem;
 	padding: 10px 10px 10px 0;
@@ -198,16 +197,28 @@ header img {
 }
 
 .links {
-	display: block;
-	padding: 10px 10px 10px 0;;
+	padding: 10px 10px 10px 0;
+}
+
+/*FOOTER STYLING*/
+
+footer {
+	background-color: #ffedbc;
+	height: 120px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /*RESPONSIVE STYLYING*/
 
 @media only screen and (max-width: 600px) {
+	
 	.projects-container article {
 		width: 100%;
 	}
+	
 	nav {
 		width: 100%;
 		background-color: transparent;
@@ -253,36 +264,6 @@ header img {
 		font-size: 1.5rem;
 		width: 300px;
 	}
+	
+	footer {}
 }
-
-footer {
-	height: 120px;
-	background-color: #ffedbc;
-}
-
-
-footer {
-	width: 100%;
-	height: 150px;
-	margin: 0 auto;
-	display: flex;
-	align-items: baseline;
-	justify-content: center;
-	font-family: 'Montserrat', serif;
-}
-
-footer li {
-	padding: 20px;
-	font-family: 'Montserrat', sans-serif;
-	list-style-type: none;
-	font-size: 1.8rem;
-}
-
-footer a {
-	text-decoration: none;
-}
-
-footer a:link    {color:#ed4264;} /*dark pink*/
-footer a:visited {color:#ed4264;} /*dark pink*/
-footer a:hover   {color:#FFFFFF;}
-footer a:active  {color:#ed4264;} /*dark pink*/
