@@ -40,6 +40,8 @@ li {
 	top: 90%;
 }
 
+
+
 /* NAV STYLING */
 
 nav {
@@ -114,7 +116,7 @@ header img {
 	display: flex;
 	justify-content: flex-start;
 	width: 250px;
-	padding: 20px;
+	padding-right: 20px;
 }
 
 
@@ -168,21 +170,39 @@ header img {
 }
 
 #projects h1 {
-	margin: 0px 0px 0px 100px;
 }
 
 #projects h2 span {
 	font-family: 'Londrina Outline';
 }
 
+.projects-wrapper {
+		margin: 100px 200px 70px;
+		display: flex;
+		justify-content: space-between;
+}
+
+.projects-text {
+	width: 200px;
+}
+
+.projects-text p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+	width: 700px;
+}
+
 .projects-container {
-	margin: 50px 150px 100px;
+	margin: 100px 0px 0px 0px;
 	display: flex;
+	justify-content: center;
 	flex-flow: row wrap;
+	width: 80%;
 }
 
 .projects-container article {
-	width: 25%;
+	width: 33.3%;
+	margin-top: 20px;
 }
 
 .projects-container img {
@@ -199,6 +219,10 @@ header img {
 
 .links {
 	padding: 10px 10px 10px 0;
+}
+
+.hide {
+	display: none;
 }
 
 /*FOOTER STYLING*/
@@ -220,48 +244,84 @@ footer {
 		width: 100%;
 	}
 	
-	nav {
-		width: 100%;
-		background-color: transparent;
-		margin: 0px;
-		display: flex;
-		flex-wrap: wrap;
-		
+	.show {
+		display: none;
 	}
-	
-	nav li {
-		font-size: 1.5rem;
-		padding: 5px;
-		color: #ffffff;
-	}
-	
-	nav a:link    {color:#FFFFFF;} 
-	nav a:visited {color:#FFFFFF;} 
-	nav a:hover   {color:#FFFFFF;}
-	nav a:active  {color:#FFFFFF;} 
 	
 	.home-arrow {
 		display: none;
 	}
 	
-	
-	header {
-		margin: 0px
-	}
-	
-	header h1 {
-		font-size: 3rem;
-	}
-	
-	header h2 {
-		font-size: 1.4rem;
-	}
-	
-	#about {
-		margin: 70px 100px 100px;
+	.hide {
 		display: block;
 	}
+	.responsive-nav {
+		font-size: 0.2rem;
+		height: 50%;
+		display: flex;
+		flex-direction: column;
+		background-color: #ffffff;
+		width: 100%;
+		margin: 0px;
+		padding: 5px;
+		color: #ed4264;
+		justify-content: center;
+		align-items: center;
+		background-image: linear-gradient(45deg, #ed4264, #ffedbc); /*dark pink into yellow*/
+	}
 	
+	.responsive-nav a {
+		color: white;
+	}
+	
+	.responsive-intro {
+		padding: 30px 0 0 0;
+		margin: 10px 100px 100px;
+		display: block;
+		font-family: 'Montserrat', serif;
+		
+	}
+	
+	.responsive-intro h1 {
+		font-size: 3rem;
+		color: #ed4264;
+	}
+	
+	.responsive-intro h1 span {
+			font-family: 'Londrina Outline';
+	}
+	
+	.responsive-intro h2 {
+		font-size: 2rem;
+		padding: 5px;
+	}
+	
+	.responsive-intro h3 {
+		color: #000000;
+		font-size: 1.5rem;
+	}
+	
+/*	#about {
+		width: 100%;
+		display: grid;
+		justify-items: center;
+	}*/
+	
+	.headshot {
+		height: 250px;
+		width: 250px;
+	}
+	
+	
+	
+	#about {
+		padding: 30px 0 0 0;
+		margin: 10px 100px 100px;
+		display: block;
+		font-family: 'Montserrat', serif;
+		font-size: 1rem;
+	}
+		
 	.bio-content h2 {
 		font-family: 'Montserrat', serif;
 		color: #ed4264; /*dark pink*/
@@ -273,6 +333,16 @@ footer {
 		font-size: 1.5rem;
 		width: 300px;
 	}
+	
+	.projects-wrapper {
+		padding: 30px 0 0 0;
+		margin: 10px 100px 100px;
+		display: block;
+		font-family: 'Montserrat', serif;
+		font-size: 1rem;
+		justify-items: center;
+	}
+
 
 	footer {
 		font-size: 0.2rem;
