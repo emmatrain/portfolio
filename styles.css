@@ -5,7 +5,7 @@
 }
 
 html {
-	font-size: 62.5%; /*16px (so 1 rem = 10px)*/
+	font-size: 10px;
 }
 
 a {
@@ -56,10 +56,7 @@ nav a, footer a:active  {color:#ed4264;} /*dark pink*/
 /* HEADER STYLING */
 
 header {
-	margin: 120px 100px;
-	background-color: transparent;
 	color: #FFFFFF;
-	width: 900px;
 }
 
 header h1 {
@@ -98,15 +95,12 @@ header a:hover {
 	text-decoration: underline;
 }
 
-header img {
+.social-icons {
 	height: 32px;
 	width: 32px;
 	margin: 10px;
-}
-
-.social-icons {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-around;
 	width: 250px;
 	padding-right: 20px;
 }
@@ -156,16 +150,13 @@ header img {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.5rem;
 	width: 700px;
+	color: #000;
 }
 
 /*PROJECTS STYLING*/
 
-#projects {
-	width: 100%;
-}
-
 #projects h2 span {
-	font-family: 'Londrina Outline';
+	font-family: 'Londrina Outline', sans-serif;
 }
 
 .projects-wrapper {
@@ -185,12 +176,11 @@ header img {
 }
 
 .projects-container {
-	margin: 100px 0px 0px 0px;
 	display: flex;
-	justify-content: center;
 	flex-flow: row wrap;
-	width: 80%;
-}
+	text-align: center;
+	}
+
 
 .projects-container article {
 	width: 33.3%;
@@ -222,7 +212,6 @@ header img {
 footer {
 	background-color: #ffedbc;
 	height: 120px;
-	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -237,49 +226,36 @@ footer a {
 
 @media only screen and (max-width: 600px) {
 
-	
 	.home-arrow {
 		display: none;
 	}
-	
-	.hidden-repsonsive-sections {
-		display: block;
-		margin: 0;
-	}
-	
+
 	.responsive-intro h1 {
 		font-size: 3rem;
 		color: #ed4264;
 	}
-	
+
 	.responsive-intro h1 span {
-			font-family: 'Londrina Outline';
+		font-family: 'Londrina Outline', sans-serif;
 	}
-	
+
 	.responsive-intro h2 {
+		color: #000000;
 		font-size: 2rem;
 		padding: 5px;
 	}
 	
+
 	.responsive-intro h3 {
 		color: #000000;
 		font-size: 1.5rem;
 	}
-	
+
 	.headshot {
 		height: 250px;
 		width: 250px;
 	}
-		
-	#about {
-		padding: 30px 0 0 0;
-		margin: 10px 100px 100px;
-		display: block;
-		font-family: 'Montserrat', serif;
-		font-size: 1rem;
-		justify-items: center;
-	}
-		
+
 	.bio-content h2 {
 		font-family: 'Montserrat', serif;
 		color: #ed4264; /*dark pink*/
@@ -300,7 +276,7 @@ footer a {
 		display: flex;
 		flex-direction: column;
 	}
-	
+
 	footer a {
 		padding: 5px;
 		font-size: 1.5rem;
@@ -316,13 +292,17 @@ footer a {
 		font-size: 1rem;
 		justify-items: center;
 	}
-	
+
 	.responsive-intro {
 		padding: 30px 0 0 0;
 		margin: 10px 100px 100px;
 		display: block;
 		font-family: 'Montserrat', serif;
-		
+
+	}
+
+	.bio-content p {
+		width: 70%;
 	}
 }
 
@@ -342,7 +322,6 @@ footer a {
 .responsive-nav {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 	align-items: center;
 	background-image: linear-gradient(45deg, #ed4264, #ffedbc); /*dark pink into yellow*/
 }
@@ -358,9 +337,17 @@ footer a {
 	padding: 8px;
 }
 
-
 .show-wide-nav {
 	display: none;
+}
+
+.hidden-repsonsive-sections {
+	display: block;
+	margin: 0;
+}
+
+header {
+	color: #000000;
 }
 }
 
@@ -369,5 +356,3 @@ footer a {
 		width: 100%;
 	}
 }
-
-
