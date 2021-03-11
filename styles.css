@@ -236,10 +236,7 @@ footer a {
 /*RESPONSIVE STYLYING*/
 
 @media only screen and (max-width: 600px) {
-	
-	.projects-container article {
-		width: 100%;
-	}
+
 	
 	.home-arrow {
 		display: none;
@@ -248,25 +245,6 @@ footer a {
 	.hidden-repsonsive-sections {
 		display: block;
 		margin: 0;
-	}
-	
-	.responsive-nav a {
-		color: white;
-		font-size: 2rem;
-		width: 650px;
-	}
-	
-	.responsive-nav li {
-		list-style-type: none;
-		padding: 8px;
-	}
-	
-	.responsive-intro {
-		padding: 30px 0 0 0;
-		margin: 10px 100px 100px;
-		display: block;
-		font-family: 'Montserrat', serif;
-		
 	}
 	
 	.responsive-intro h1 {
@@ -338,6 +316,14 @@ footer a {
 		font-size: 1rem;
 		justify-items: center;
 	}
+	
+	.responsive-intro {
+		padding: 30px 0 0 0;
+		margin: 10px 100px 100px;
+		display: block;
+		font-family: 'Montserrat', serif;
+		
+	}
 }
 
 @media only screen and (max-width: 1380px) {
@@ -361,7 +347,27 @@ footer a {
 	background-image: linear-gradient(45deg, #ed4264, #ffedbc); /*dark pink into yellow*/
 }
 
+.responsive-nav a {
+	color: white;
+	font-size: 2rem;
+	width: 650px;
+}
+
+.responsive-nav li {
+	list-style-type: none;
+	padding: 8px;
+}
+
+
 .show-wide-nav {
 	display: none;
 }
 }
+
+@media only screen and (max-width: 1190px) {
+	.projects-container article {
+		width: 100%;
+	}
+}
+
+
